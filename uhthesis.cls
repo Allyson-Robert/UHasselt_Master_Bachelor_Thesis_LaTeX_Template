@@ -136,36 +136,34 @@
         % \end{minipage}
         \vspace{20mm}
         \begin{adjustwidth}{0.65in}{}
-            {
-                \small
-                \textbf{\thedepartment}
-            } \\
-            {
-                \small
+                \Large
+                \textbf{\thedepartment} \\
                 \thedegreename
-            } \vspace{20mm}
-            
-            {
-                \small
+        \end{adjustwidth}
+        \vspace{15mm}
+        \begin{adjustwidth}{0.65in}{}
                 \textbf{\textit{\thedegreetype thesis}}
-            } \\
+        \end{adjustwidth}
+        \vspace{5mm}
+        \begin{adjustwidth}{0.65in}{}
             \begin{center}
                 \LARGE
                 \textbf{\thetitle}
             \end{center}
-            \vspace{30mm}
-            {
-                \small
+        \end{adjustwidth}
+        \vfill
+        \begin{adjustwidth}{0.65in}{}
+                \Large
                 \textbf{PROMOTOR:}\\
-                \thepromotor
-            } \\
-            {
-                \small
+                \thepromotor 
+        \end{adjustwidth}
+        \vspace{3mm}
+        \begin{adjustwidth}{0.65in}{}
+                \Large
                 \textbf{MENTOR:}\\
                 \thementor
-            }
-            \vspace{30mm}
         \end{adjustwidth}
+        \vspace{30mm}
         
         % \begin{minipage}{\textwidth}
         %         \flushright
