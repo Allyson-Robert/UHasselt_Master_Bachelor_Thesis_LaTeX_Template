@@ -114,37 +114,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %      General Layout      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Definition of geometry
-% \setlength{\topmargin}{-0.5in} 
 \setlength{\oddsidemargin}{0.35in} 
 \setlength{\evensidemargin}{-0.35in}
-% \setlength{\textwidth}{6.2in} 
-% \setlength{\parindent}{0cm} 
-% \setlength{\textheight}{9.05in}
-% \setlength{\parskip}{0ex} 
-% \setlength{\baselineskip}{0p6.5} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %        Front Page        %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand*{\maketitle}{%
     \newgeometry{top=0.65in, bottom=1in, left=0.65in, right=1in}
-    % \setlength{\oddsidemargin}{-0.35in} 
     \begin{titlepage}
         \thispagestyle{empty}
-        % \begin{tikzpicture}[remember picture,overlay]
-        %     \node[yshift=-7cm] at (current page.north west)
-        %       {\begin{tikzpicture}[remember picture, overlay]
-        %         \fill[Red] (0,0) rectangle
-        %           (\paperwidth,7cm);
-        %       \end{tikzpicture}
-        %     };
-        % \end{tikzpicture}
         \noindent\includegraphics[width=6cm]{UHasselt_logo}
-        % \begin{minipage}[t]{6cm}
-        %      % Logo of the faculty in question
-        %     \includegraphics[width=6cm]{UHasselt_logo}
-        % \end{minipage}
         \vspace{20mm}
         \begin{adjustwidth}{0.65in}{}
                 \Large
@@ -182,38 +162,6 @@
                 \thementor
         \end{adjustwidth}
         \vspace{30mm}
-        
-        % \begin{minipage}{\textwidth}
-        %         \flushright
-        %         {\fontsize{35}{42}\selectfont\textbf{\textsf{\thecourse}}} \\
-        %         \LARGE \textbf{\thedegree} \\
-        %         {\color{Red}\textbf{\thetitle}} \\
-        % \end{minipage}
-        
-        % \vfill
-        % \begin{minipage}{\textwidth}
-        %         \flushright 
-        %         \normalsize \textbf{Docent(en):} \\ \thementor  \\
-        % \end{minipage}
-        
-        % \vfill
-        % \begin{minipage}{\textwidth}
-        %         \flushright 
-        %         \normalsize \textbf{Student(en):} \\ \theauthor 
-        % \end{minipage}
-        
-        % \vfill
-        % \begin{minipage}{\textwidth}
-        %         \flushright
-        %         \normalsize \thedate \\
-        %         \small Academiejaar \theacyear \\
-        %         \noindent\rule{\textwidth}{0.4pt}
-        % \end{minipage}
-        % \vfill
-        % \hfill
-        % \begin{minipage}[t]{3.5cm}
-        %     \includegraphics[width = 3.5cm]{UHasselt_Logo_Tall}
-        % \end{minipage}%v
     \end{titlepage}
     \clearpage
     \restoregeometry
