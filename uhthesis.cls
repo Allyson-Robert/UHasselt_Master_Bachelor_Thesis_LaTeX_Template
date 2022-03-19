@@ -162,6 +162,13 @@
                 \textbf{\thetitle}
             \end{center}
         \end{adjustwidth}
+        \vspace{5mm}
+        \begin{adjustwidth}{0.65in}{}
+            \begin{center}
+                \Large
+                {\theauthor}
+            \end{center}
+        \end{adjustwidth}
         \vfill
         \begin{adjustwidth}{0.65in}{}
                 \Large
