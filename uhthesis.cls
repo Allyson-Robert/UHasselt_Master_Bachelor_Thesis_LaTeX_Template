@@ -33,12 +33,20 @@
 \RequirePackage[explicit]{titlesec}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{helvet}
-\RequirePackage{chngcntr}
 \RequirePackage[normalem]{ulem}
 \RequirePackage[justification=centering]{caption}
 \RequirePackage{float}
 \RequirePackage{booktabs}
 \RequirePackage{changepage}
+\RequirePackage[
+    backend=biber,
+    style=ieee,
+    natbib=true,
+    sortlocale=en_US,
+    url=false, 
+    doi=true,
+    eprint=false
+]{biblatex}
 
 % Improvements
 \RequirePackage{enumerate}
@@ -100,6 +108,9 @@
 \newcommand*{\acyear}[1]{\gdef\theacyear{#1}}
 \newcommand*{\theacyear}{Insert \textbackslash acyear\{\} below \textbackslash date\{\}}
 
+% Add the bibliography file
+\addbibresource{references.bib}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %      General Layout      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -142,7 +153,7 @@
         \end{adjustwidth}
         \vspace{15mm}
         \begin{adjustwidth}{0.65in}{}
-                \textbf{\textit{\thedegreetype thesis}}
+                \textbf{\textit{\thedegreetype}}
         \end{adjustwidth}
         \vspace{5mm}
         \begin{adjustwidth}{0.65in}{}
